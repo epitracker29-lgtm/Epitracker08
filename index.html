@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epidemiology Data Portal</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; background-color: #f4f7f6; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #27ae60; padding-bottom: 10px; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background-color: #27ae60; color: white; padding: 12px; text-align: left; }
+        td { padding: 12px; border-bottom: 1px solid #ddd; }
+        tr:hover { background-color: #f1f1f1; }
+        .status { font-size: 0.9em; color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Epidemiological Database</h1>
+        <p class="status">Live tracking of historical health registries.</p>
+        
+        <div id="table-container">
+            <p>Loading data, please wait...</p>
+        </div>
+    </div>
+
+    <script>
+        // REPLACE 'data.json' with the exact name of the file you uploaded to GitHub
+        const dataFile = 'epidemic_data.json'; 
+
+        async function loadTable() {
+            try {
+                const response = await fetch(dataFile);
+                const data = await response.json();
+                
+                // Assuming the JSON is an array of records
+                // If your JSON has a different structure, we can adjust this part
+                let tableHtml = '<table><thead><tr>';
+                
+                // Create Headers based on your MySQL Column names
+                Object.keys(data[0]).forEach(key => {
+                    tableHtml += `<th>${key.toUpperCase()}</th>`;
+                });
+                tableHtml += '</tr></thead><tbody>';
+
+                // Create Rows
+                data.forEach(row => {
+                    tableHtml += '<tr>';
+                    Object.values(row).forEach(val => {
+                        tableHtml += `<td>${val}</td>`;
+                    });
+                    tableHtml += '</tr>';
+                });
+                tableHtml += '</tbody></table>';
+
+                document.getElementById('table-container').innerHTML = tableHtml;
+            } catch (error) {
+                document.getElementById('table-container').innerHTML = 
+                    '<p style="color:red;">Error: Could not find your data file. Make sure the filename matches exactly.</p>';
+            }
+        }
+
+        loadTable();
+    </script>
+</body>
+</html>
 
