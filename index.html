@@ -3,67 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epitracker - Epidemiology Data</title>
+    <title>Epitracker - Epidemiology Portal</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f0f2f5; color: #1a1a1b; }
-        .container { max-width: 1000px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #27ae60; padding-bottom: 15px; }
-        .status-box { background: #e8f5e9; color: #2e7d32; padding: 10px; border-radius: 5px; text-align: center; margin-bottom: 20px; font-weight: bold; }
-        .table-wrapper { overflow-x: auto; margin-top: 20px; }
-        table { width: 100%; border-collapse: collapse; min-width: 600px; }
-        th { background-color: #27ae60; color: white; padding: 15px; text-align: left; text-transform: uppercase; font-size: 0.85em; }
-        td { padding: 12px; border-bottom: 1px solid #eee; font-size: 0.95em; }
-        tr:hover { background-color: #f9f9f9; }
-        .error-msg { color: #d32f2f; background: #ffebee; padding: 20px; border-radius: 8px; border: 1px solid #ffcdd2; text-align: center; }
-    </style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f8fafc; color: #334155; }
+        .header { background: #1e293b; color: white; padding: 2rem 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        .status-badge { display: inline-block; background: #dcfce7; color: #166534; padding: 0.5rem 1rem; border-radius: 9999px; font-weight: 600; font-size: 0.875rem; margin-bottom: 1rem; }
+        .table-container { overflow-x: auto; margin-top: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th { background: #f1f5f9; padding: 1rem; font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+        td { padding: 1rem; border-bottom: 1px solid #f1f5f9; font-size: 0.9375rem; }
+        tr:hover { background-color: #f8fafc; }
+        .error-card { text-align: center; padding: 3rem; color: #991b1b; background: #fef2f2; border-radius: 12px; border: 1px solid #fecaca; }
+    </script>
 </head>
 <body>
 
-    <div class="container">
+    <div class="header">
         <h1>Epitracker Database</h1>
-        <div class="status-box">Live Health Data Registry</div>
-        
-        <div class="table-wrapper" id="table-container">
-            <p style="text-align: center;">Reading data from 127_0_0_1 (8).json...</p>
+        <p>Epidemiological Data Intelligence Platform</p>
+    </div>
+
+    <div class="container">
+        <div id="display-area" class="card">
+            <div class="status-badge">System Live</div>
+            <p>Fetching records from <strong>Db15.json</strong>...</p>
         </div>
     </div>
 
     <script>
-        // THIS LINE MATCHES YOUR FILENAME EXACTLY
-        const dataFile = '127_0_0_1 (8).json'; 
+        // MATCHING YOUR NEW FILENAME
+        const dataFile = 'Db15.json'; 
 
-        async function loadTable() {
+        async function loadData() {
+            const displayArea = document.getElementById('display-area');
             try {
                 const response = await fetch(dataFile);
                 if (!response.ok) throw new Error('File not found');
                 
                 const rawData = await response.json();
                 
-                // phpMyAdmin JSON exports often put the data inside an array named 'data' or 'table_name'
-                // We check if it's a direct array or nested
+                // Logic to find the data inside phpMyAdmin JSON structure
                 let data = Array.isArray(rawData) ? rawData : (rawData[2] && rawData[2].data ? rawData[2].data : Object.values(rawData)[0]);
 
                 if (!data || data.length === 0) {
-                    document.getElementById('table-container').innerHTML = "<p>The file is empty or formatted incorrectly.</p>";
+                    displayArea.innerHTML = "<div class='error-card'>The file was found but it contains no data rows.</div>";
                     return;
                 }
 
-                let tableHtml = '<table><thead><tr>';
-                
-                // Build Headers
-                Object.keys(data[0]).forEach(key => {
-                    tableHtml += `<th>${key.replace(/_/g, ' ')}</th>`;
-                });
-                tableHtml += '</tr></thead><tbody>';
+                let html = `
+                    <div class="status-badge">System Live</div>
+                    <h2>Data Registry</h2>
+                    <div class="table-container">
+                        <table>
+                            <thead><tr>${Object.keys(data[0]).map(key => `<th>${key.replace(/_/g, ' ')}</th>`).join('')}</tr></thead>
+                            <tbody>
+                                ${data.map(row => `<tr>${Object.values(row).map(val => `<td>${val !== null ? val : '-'}</td>`).join('')}</tr>`).join('')}
+                            </tbody>
+                        </table>
+                    </div>`;
 
-                // Build Rows
-                data.forEach(row => {
-                    tableHtml += '<tr>';
-                    Object.values(row).forEach(val => {
-                        tableHtml += `<td>${val !== null ? val : '-'}</td>`;
-                    });
-                    tableHtml += '</tr>';
-                });
+                displayArea.innerHTML = html;
+            } catch (error) {
+                displayArea.innerHTML = `
+                    <div class="error-card">
+                        <h3 style="margin-top:0">Data Link Broken</h3>
+                        <p>I am looking for a file named <strong>${dataFile}</strong> but I can't find it.</p>
+                        <p style="font-size: 0.85rem">Tip: Ensure the file is in the same GitHub folder as index.html and that the name is exactly <b>Db15.json</b>.</p>
+                    </div>`;
+            }
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
                 tableHtml += '</tbody></table>';
 
                 document.getElementById('table-container').innerHTML = tableHtml;
