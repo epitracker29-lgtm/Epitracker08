@@ -1,39 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epitracker - Epidemiology Portal</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f8fafc; color: #334155; }
-        .header { background: #1e293b; color: white; padding: 2rem 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
-        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
-        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
-        .status-badge { display: inline-block; background: #dcfce7; color: #166534; padding: 0.5rem 1rem; border-radius: 9999px; font-weight: 600; font-size: 0.875rem; margin-bottom: 1rem; }
-        .table-container { overflow-x: auto; margin-top: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; }
-        table { width: 100%; border-collapse: collapse; text-align: left; }
-        th { background: #f1f5f9; padding: 1rem; font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
-        td { padding: 1rem; border-bottom: 1px solid #f1f5f9; font-size: 0.9375rem; }
-        tr:hover { background-color: #f8fafc; }
-        .error-card { text-align: center; padding: 3rem; color: #991b1b; background: #fef2f2; border-radius: 12px; border: 1px solid #fecaca; }
-    </script>
-</head>
+<html>
 <body>
-
-    <div class="header">
-        <h1>Epitracker Database</h1>
-        <p>Epidemiological Data Intelligence Platform</p>
-    </div>
-
-    <div class="container">
-        <div id="display-area" class="card">
-            <div class="status-badge">System Live</div>
-            <p>Fetching records from <strong>Db15.json</strong>...</p>
-        </div>
-    </div>
+    <h1>Epitracker Test</h1>
+    <div id="out">Loading...</div>
 
     <script>
-        // MATCHING YOUR NEW FILENAME
+        async function run() {
+            try {
+                const res = await fetch('Db15.json');
+                const data = await res.json();
+                document.getElementById('out').innerHTML = JSON.stringify(data).substring(0, 500) + "...";
+            } catch (e) {
+                document.getElementById('out').innerHTML = "Error: " + e;
+            }
+        }
+        run();
+    </script>
+</body>
+</html>
         const dataFile = 'Db15.json'; 
 
         async function loadData() {
