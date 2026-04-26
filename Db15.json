@@ -1,0 +1,312 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"phpmyadmin"},
+{"type":"table","name":"pma__bookmark","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__central_columns","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__column_info","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__designer_settings","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__export_templates","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__favorite","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__history","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__navigationhiding","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__pdf_pages","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__recent","database":"phpmyadmin","data":
+[
+{"username":"root","tables":"[{\"db\":\"students_db\",\"table\":\"students\"},{\"db\":\"statistiques\",\"table\":\"abgrcs_users\"},{\"db\":\"statistiques\",\"table\":\"abgrcs_options\"},{\"db\":\"statistiques\",\"table\":\"table_02\"},{\"db\":\"statistiques\",\"table\":\"table_01\"},{\"db\":\"epitracker\",\"table\":\"user\"},{\"db\":\"statistiques\",\"table\":\"localisations_sexe\"}]"}
+]
+}
+,{"type":"table","name":"pma__relation","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__savedsearches","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__table_coords","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__table_info","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__table_uiprefs","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__tracking","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__userconfig","database":"phpmyadmin","data":
+[
+{"username":"root","timevalue":"2026-04-26 19:16:20","config_data":"{\"Console\\\/Mode\":\"show\",\"ThemeDefault\":\"pmahomme\",\"NavigationWidth\":200,\"lang\":\"en_GB\",\"Console\\\/Height\":0}"}
+]
+}
+,{"type":"table","name":"pma__usergroups","database":"phpmyadmin","data":
+[
+
+]
+}
+,{"type":"table","name":"pma__users","database":"phpmyadmin","data":
+[
+
+]
+}
+{"type":"database","name":"statistiques"},
+,{"type":"table","name":"abgrcs_options","database":"statistiques","data":
+[
+{"option_id":"1","option_var":"abgrcs_login_logo","option_value":"logo.jpg"},
+{"option_id":"2","option_var":"abgrcs_login_background","option_value":"backend.jpg"},
+{"option_id":"3","option_var":"abgrcs_website_title","option_value":"EPITRACKER"},
+{"option_id":"4","option_var":"abgrcs_website_description","option_value":"Epitracker "},
+{"option_id":"5","option_var":"company_name","option_value":"EPITRACKER"},
+{"option_id":"6","option_var":"company_address","option_value":"khmis miliana"},
+{"option_id":"7","option_var":"company_phone","option_value":"00000000 \/ 0000000000"},
+{"option_id":"8","option_var":"company_email","option_value":"epitracker@gmail.com"},
+{"option_id":"10","option_var":"company_currency","option_value":"€"}
+]
+}
+,{"type":"table","name":"abgrcs_users","database":"statistiques","data":
+[
+{"user_id":"1","user_nom":"EPITR","user_prenom":"ACKER","user_login":"LABDI HOURIA","user_password":"f7d2ede0ee0cb1ded60a813ec20a4f3d","user_email":"labdihouria50@gmail.com","user_type":"admin","user_img":"user_1.jpg","user_added_date":null,"user_status":"1"}
+]
+}
+,{"type":"table","name":"tables","database":"statistiques","data":
+[
+{"table_id":"2","table_type":"table_02","table_nom":"localisation par sexe 2014","table_description":"Résumé des Données\r\nCas Totaux\r\nFemmes : 37 cas (100%)\r\nHommes : 66 cas (100%)\r\nTotal : 103 cas (100%)\r\nObservations Clés\r\nTypes de Cancer avec la Plus Haute Incidence chez les Femmes :\r\nCancer du Sein : 8 cas (22%)\r\nCancer du Col Uterin : 8 cas (22%)\r\nCancer du Foie : 2 cas (5%)\r\nTypes de Cancer avec la Plus Haute Incidence chez les Hommes :\r\nCancer de la Prostate : 50 055 cas (7%)—ce chiffre semble anormalement élevé et nécessite probablement des clarifications.\r\nCancer du Poumon (Bronches) : 6 cas (9%)\r\nCancer de l'Estomac : 13 cas (20%)\r\nDistribution par Sexe :\r\nCancer du Sein est exclusivement présent chez les femmes, soulignant la nécessité d'une sensibilisation et d'un dépistage ciblés.\r\nCancer de la Prostate est exclusif aux hommes, mettant en avant l'importance d'initiatives de santé spécifiques pour les hommes.\r\nCancers avec une Incidence Faible :\r\nPharynx, Rectum et Anus : Très peu de cas dans les deux sexes.\r\nCancer de la Thyroïde : 1 cas chez les femmes et aucun chez les hommes, indiquant une faible prévalence.\r\nCancers sans Cas chez les Femmes :\r\nLe cancer de la prostate et quelques autres (comme le rectum et l'anus) n'ont pas de représentation parmi les patientes féminines.\r\nDistribution en Pourcentage :\r\nLes pourcentages reflètent la proportion de cas par rapport au total pour chaque sexe, fournissant des indications sur les cancers plus communs dans chaque démographie.\r\nAnalyse Comparative\r\nDistribution Générale :\r\nLes femmes représentent 36 % des cas totaux, tandis que les hommes représentent 64 %. Cela suggère une prévalence plus élevée de cancer chez les hommes dans cet ensemble de données.\r\nDomination de Certains Cancers :\r\nLe chiffre du Cancer de la Prostate se démarque significativement ; s'il est exact, cela pourrait indiquer un problème de santé majeur nécessitant des recherches et des interventions ciblées.\r\nRecommandations\r\nInitiatives de Santé Ciblées :\r\nAugmenter les campagnes de sensibilisation pour les cancers du sein et du col de l'utérus chez les femmes.\r\nPour les hommes, la sensibilisation au cancer de la prostate est cruciale, surtout compte tenu du nombre élevé signalé.\r\nVérification des Données :\r\nLe chiffre du cancer de la prostate semble être une anomalie. Une enquête plus approfondie est nécessaire pour comprendre son contexte et son exactitude.\r\nDépistage Régulier :\r\nEncourager des dépistages réguliers pour les cancers du sein et de la prostate, car ce sont les cancers les plus fréquents dans leurs sexes respectifs.\r\nRecherche et Ressources :\r\nAllouer des ressources pour enquêter sur les cancers à faible incidence afin de comprendre les facteurs de risque potentiels ou les obstacles au diagnostic.\r\nConclusion\r\nLes données fournissent une vue d'ensemble complète de l'incidence des cancers par localisation et sexe, mettant en évidence des tendances significatives et des domaines nécessitant de l'attention. Comprendre ces schémas peut conduire à des stratégies de santé publique efficaces et améliorer les efforts de prévention et de traitement du cancer. "},
+{"table_id":"3","table_type":"table_03","table_nom":"Estimation de la population d'année 2014","table_description":"Résumé des Données\r\nCas Totaux\r\nFemmes : 37 cas (100%)\r\nHommes : 66 cas (100%)\r\nTotal : 103 cas (100%)\r\nObservations Clés\r\nTypes de Cancer avec la Plus Haute Incidence chez les Femmes :\r\nCancer du Sein : 8 cas (22%)\r\nCancer du Col Uterin : 8 cas (22%)\r\nCancer du Foie : 2 cas (5%)\r\nTypes de Cancer avec la Plus Haute Incidence chez les Hommes :\r\nCancer de la Prostate : 50 055 cas (7%)—ce chiffre semble anormalement élevé et nécessite probablement des clarifications.\r\nCancer du Poumon (Bronches) : 6 cas (9%)\r\nCancer de l'Estomac : 13 cas (20%)\r\nDistribution par Sexe :\r\nCancer du Sein est exclusivement présent chez les femmes, soulignant la nécessité d'une sensibilisation et d'un dépistage ciblés.\r\nCancer de la Prostate est exclusif aux hommes, mettant en avant l'importance d'initiatives de santé spécifiques pour les hommes.\r\nCancers avec une Incidence Faible :\r\nPharynx, Rectum et Anus : Très peu de cas dans les deux sexes.\r\nCancer de la Thyroïde : 1 cas chez les femmes et aucun chez les hommes, indiquant une faible prévalence.\r\nCancers sans Cas chez les Femmes :\r\nLe cancer de la prostate et quelques autres (comme le rectum et l'anus) n'ont pas de représentation parmi les patientes féminines.\r\nDistribution en Pourcentage :\r\nLes pourcentages reflètent la proportion de cas par rapport au total pour chaque sexe, fournissant des indications sur les cancers plus communs dans chaque démographie.\r\nAnalyse Comparative\r\nDistribution Générale :\r\nLes femmes représentent 36 % des cas totaux, tandis que les hommes représentent 64 %. Cela suggère une prévalence plus élevée de cancer chez les hommes dans cet ensemble de données.\r\nDomination de Certains Cancers :\r\nLe chiffre du Cancer de la Prostate se démarque significativement ; s'il est exact, cela pourrait indiquer un problème de santé majeur nécessitant des recherches et des interventions ciblées.\r\nRecommandations\r\nInitiatives de Santé Ciblées :\r\nAugmenter les campagnes de sensibilisation pour les cancers du sein et du col de l'utérus chez les femmes.\r\nPour les hommes, la sensibilisation au cancer de la prostate est cruciale, surtout compte tenu du nombre élevé signalé.\r\nVérification des Données :\r\nLe chiffre du cancer de la prostate semble être une anomalie. Une enquête plus approfondie est nécessaire pour comprendre son contexte et son exactitude.\r\nDépistage Régulier :\r\nEncourager des dépistages réguliers pour les cancers du sein et de la prostate, car ce sont les cancers les plus fréquents dans leurs sexes respectifs.\r\nRecherche et Ressources :\r\nAllouer des ressources pour enquêter sur les cancers à faible incidence afin de comprendre les facteurs de risque potentiels ou les obstacles au diagnostic.\r\nConclusion\r\nLes données fournissent une vue d'ensemble complète de l'incidence des cancers par localisation et sexe, mettant en évidence des tendances significatives et des domaines nécessitant de l'attention. Comprendre ces schémas peut conduire à des stratégies de santé publique efficaces et améliorer les efforts de prévention et de traitement du cancer. Si vous avez d'autres questions ou besoin d'une analyse supplémentaire, n'hésitez pas à demander !\r\n\r\nAnalyse this on too in frenche Groupe d’âge masculin féminin\r\n0-4 43271 41212\r\n5-6 36609 34953\r\n10-14 42371 40149\r\n15-19 49537 48152\r\n20-24 50285 48783\r\n25-29 43110 41638\r\n30-34 32818 32159\r\n35-39 26928 27563\r\n40-44 23016 23241\r\n45-49 17043 17693\r\n50-54 15582 15132\r\n55-59 12440 11425\r\n60-64 8528 7911\r\n65-69 7654 6991\r\n70-74 5966 5781\r\n75 et plus 7967 7564\r\nTotale 423125 410617\r\n\r\n\r\nAssistant\r\n\r\nPoe\r\nBien sûr ! Voici l'analyse des données sur la répartition par groupe d'âge entre les hommes et les femmes.\r\n\r\nRésumé des Données\r\nTotal par Sexe\r\nMasculin : 423 125\r\nFéminin : 410 617\r\nTotal : 833 742\r\nAnalyse par Groupe d'Âge\r\nGroupes d'Âge avec la Plus Haute Population :\r\n15-19 ans : 49 537 hommes et 48 152 femmes.\r\n20-24 ans : 50 285 hommes et 48 783 femmes.\r\nCes tranches d'âge montrent une population relativement élevée, particulièrement chez les hommes.\r\nGroupes d'Âge avec la Plus Basse Population :\r\n70-74 ans : 5 966 hommes et 5 781 femmes.\r\n65-69 ans : 7 654 hommes et 6 991 femmes.\r\nCes groupes montrent une diminution progressive de la population.\r\nDistribution par Sexe :\r\nLes hommes représentent une proportion légèrement plus élevée dans presque tous les groupes d'âge, sauf dans les tranches d'âge supérieures (55-59 et plus).\r\nÀ partir de 60 ans, la population féminine commence à se rapprocher de la population masculine, soulignant la longévité souvent plus élevée des femmes.\r\nTendances Générales :\r\nJeunes Adultes (15-29 ans) : Les hommes sont plus nombreux, ce qui peut refléter des tendances socioculturelles.\r\nSeniors (65 ans et plus) : La population féminine reste relativement élevée, ce qui est cohérent avec les données sur l'espérance de vie.\r\nObservations Clés\r\nÉquilibre des Sexes : Bien que les hommes soient en légère majorité (423 125 contre 410 617), cet écart diminue avec l'âge.\r\nLongévité : Les femmes semblent avoir une espérance de vie plus longue, ce qui est visible dans les groupes d'âge supérieurs.\r\nPrécautions de Santé : Cette répartition peut informer les politiques de santé publique, en soulignant le besoin de programmes adaptés aux jeunes adultes et aux personnes âgées.\r\nConclusion\r\nLes données montrent une répartition de la population par âge et sexe, avec des implications pour les stratégies de santé publique et les ressources nécessaires. Les hommes sont plus nombreux dans les classes d'âge plus jeunes, tandis que les femmes dominent dans les groupes d'âge plus avancés. Des initiatives ciblées peuvent être développées pour répondre aux besoins spécifiques de chaque groupe démographique. "},
+{"table_id":"4","table_type":"table_01","table_nom":"Localisation de cancer par grade 2014","table_description":"Résumé des Données Total par Grade\r\nGrade I - Bien différencié : 4 cas (4%)\r\nGrade II - Intermédiaire : 2 cas (2%)\r\nGrade III - Faiblement différencié : 1 cas (1%)\r\nGrade IV - Indifférencié : 1 cas (1%)\r\nInconnu : 95 cas (93%)\r\nTotal : 103 cas (100%)\r\nAnalyse par Localisation\r\nCancers avec Cas Identifiés par Grade :\r\nPharynx : 0 cas dans les grades 1 à 4, 1 cas inconnu.\r\nŒsophage : 1 cas de grade II (50%) et 1 inconnu.\r\nEstomac : 1 cas de grade I (25%), 1 cas de grade III (100%), et 15 cas inconnus.\r\nFoie : 4 cas inconnus.\r\nSein : 1 cas de grade I (25%) et 11 cas inconnus.\r\nCerveau : 1 cas de grade II (50%) et 4 cas inconnus.\r\nCancers avec Aucune Identification par Grade :\r\nLa majorité des cancers (comme le rectum, l'anus, et le pancréas) n'ont pas de cas identifiés dans les grades I à IV, mais présentent des cas inconnus.\r\nPrévalence des Cas Inconnus :\r\nLa catégorie \"Inconnu\" représente une part significative des données avec 95 cas, soit 93 % du total. Cela souligne un manque de classification des cas, ce qui peut compliquer l'analyse et le suivi.\r\nObservations Clés\r\nDistribution des Grades :\r\nLa grande majorité des cas ne sont pas classés (93 %), ce qui limite la capacité à évaluer la gravité et l'évolution des cancers.\r\nCancers avec Identification :\r\nLes cancers de l'œsophage et de l'estomac sont les seuls à avoir une identification par grade, ce qui indique qu'il pourrait y avoir un besoin d'amélioration dans la collecte ou l'enregistrement des données pour d'autres types de cancers.\r\nCancers de Sexe Féminin :\r\nLe cancer du sein a un certain nombre de cas identifiés, mais encore une majorité est inconnue, ce qui pourrait impacter les efforts de dépistage et de recherche.\r\nRecommandations\r\nAmélioration de la Collecte de Données :\r\nIl est crucial d'améliorer les mécanismes de collecte de données pour assurer que les cas soient correctement classifiés selon leur grade.\r\nSensibilisation et Formation :\r\nFormer le personnel médical à l'importance de la classification des cancers et de l'enregistrement des grades pour une meilleure gestion des cas.\r\nRecherche et Suivi :\r\nMener des études pour comprendre les raisons des cas inconnus et établir des protocoles pour mieux suivre les patients.\r\nConclusion\r\nLes données montrent une prévalence élevée de cas inconnus dans le registre du cancer, limitant la capacité à analyser efficacement l'incidence et la gravité des différents types de cancer. Cela souligne l'importance d'une meilleure collecte et classification des données pour améliorer la prise en charge des patients et les initiatives de santé publique."},
+{"table_id":"5","table_type":"table_01","table_nom":"localisation de cancer par tranche d'age  2014","table_description":"Résumé des Données\r\nTotal par Tranche d'Âge\r\n0 - 9 ans : 4 cas (4%)\r\n10 - 19 ans : 4 cas (4%)\r\n20 - 29 ans : 4 cas (4%)\r\n30 - 39 ans : 3 cas (3%)\r\n40 - 49 ans : 14 cas (14%)\r\n50 - 59 ans : 20 cas (20%)\r\n60 - 69 ans : 21 cas (21%)\r\n70 - 79 ans : 20 cas (20%)\r\n80 - 89 ans : 10 cas (10%)\r\n90 - 99 ans : 3 cas (3%)\r\nTotal : 103 cas (100%)\r\nAnalyse par Localisation\r\nCancers les Plus Fréquemment Diagnostiqués :\r\nSein : 12 cas (12%), surtout dans la tranche d'âge 40-49 ans (6 cas, 43%).\r\nEstomac : 17 cas (17%), avec une distribution notable dans les tranches d'âge 50-59 et 60-69 ans.\r\nBronches : 8 cas (8%), répartis assez uniformément dans plusieurs tranches d'âge.\r\nCancers avec Moins de Cas :\r\nAnus et Colonne : Un seul cas enregistré, essentiellement chez les adultes plus âgés.\r\nThyroïde et Uterus : Chacun avec 1 cas, montrant une faible incidence.\r\nDistribution par Âge :\r\nLa tranche d'âge 50-59 ans est la plus touchée, représentant 20% des cas, suivie de près par les 60-69 ans avec 21%.\r\nLes cas sont relativement rares chez les jeunes enfants (0-9 ans) et les adolescents (10-19 ans).\r\nTendances Générales :\r\nL'incidence des cancers semble augmenter avec l'âge, avec une concentration plus élevée dans les tranches d'âge plus avancées.\r\nObservations Clés\r\nPrévalence par Âge : Les cancers sont plus fréquents chez les adultes d'âge moyen et les personnes âgées, ce qui est cohérent avec les données sur l'incidence du cancer en général.\r\nType de Cancer : Les cancers du sein et de l'estomac sont prédominants, attirant l'attention sur la nécessité de programmes de sensibilisation et de dépistage ciblés pour ces types.\r\nRecommandations\r\nProgrammes de Dépistage :\r\nRenforcer les campagnes de dépistage pour les cancers du sein et de l'estomac, particulièrement chez les femmes âgées de 40 à 69 ans.\r\nSensibilisation :\r\nInformer sur les signes et symptômes des cancers les plus fréquents pour encourager un diagnostic précoce.\r\nRecherche :\r\nMener des études pour explorer les raisons de l'incidence accrue des cancers dans les tranches d'âge supérieures et identifier des facteurs de risque potentiels.\r\nConclusion\r\nLes données montrent une tendance à l'augmentation de l'incidence du cancer avec l'âge, avec des types de cancer spécifiques nécessitant une attention particulière. Il est essentiel de développer des initiatives de santé publique et des programmes de sensibilisation pour mieux gérer et prévenir ces cancers. "}
+]
+}
+,{"type":"table","name":"table_01","database":"statistiques","data":
+[
+{"id":"1","table_id":"1","etat":"PHARYNX","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"0","total":"1","total_percent":"0"},
+{"id":"2","table_id":"1","etat":"ŒSOPHAGE","grade_1":"0","grade_1_percent":"0","grade_2":"1","grade_2_percent":"1","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"0","total":"2","total_percent":"0"},
+{"id":"3","table_id":"1","etat":"ESTOMAC","grade_1":"1","grade_1_percent":"1","grade_2":"0","grade_2_percent":"0","grade_3":"1","grade_3_percent":"100","grade_4":"0","grade_4_percent":"0","inconnu":"15","inconnu_percent":"0","total":"17","total_percent":"0"},
+{"id":"4","table_id":"1","etat":"COLON","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"0","total":"2","total_percent":"0"},
+{"id":"5","table_id":"1","etat":"RECTUM","grade_1":"1","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"0","total":"3","total_percent":"0"},
+{"id":"6","table_id":"1","etat":"ANUS","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"0","total":"1","total_percent":"0"},
+{"id":"7","table_id":"1","etat":"FOIE","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"4","inconnu_percent":"0","total":"4","total_percent":"0"},
+{"id":"8","table_id":"1","etat":"VES. BILIAIRE","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"0","total":"2","total_percent":"0"},
+{"id":"9","table_id":"1","etat":"PANCREAS","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"6","inconnu_percent":"0","total":"6","total_percent":"0"},
+{"id":"10","table_id":"1","etat":"APP. DIGESTIF","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"0","total":"2","total_percent":"0"},
+{"id":"11","table_id":"1","etat":"GLOTTE","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"0","total":"1","total_percent":"0"},
+{"id":"12","table_id":"1","etat":"BRONCHES","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"8","inconnu_percent":"0","total":"8","total_percent":"0"},
+{"id":"13","table_id":"1","etat":"OS membres","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"3","inconnu_percent":"0","total":"3","total_percent":"0"},
+{"id":"14","table_id":"1","etat":"SANG","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"1","grade_4_percent":"100","inconnu":"8","inconnu_percent":"0","total":"9","total_percent":"0"},
+{"id":"15","table_id":"1","etat":" SEIN","grade_1":"1","grade_1_percent":"1","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"11","inconnu_percent":"0","total":"12","total_percent":"0"},
+{"id":"16","table_id":"1","etat":"COL UTERIN","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"8","inconnu_percent":"0","total":"8","total_percent":"0"},
+{"id":"17","table_id":"1","etat":"UTERUS","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"0","total":"1","total_percent":"0"},
+{"id":"18","table_id":"1","etat":" OVAIRE","grade_1":"1","grade_1_percent":"1","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"0","inconnu_percent":"0","total":"1","total_percent":"0"},
+{"id":"19","table_id":"1","etat":" PROSTATE","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"5","inconnu_percent":"0","total":"5","total_percent":"0"},
+{"id":"20","table_id":"1","etat":" VESSIE","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"0","total":"2","total_percent":"0"},
+{"id":"21","table_id":"1","etat":"CERVEAU","grade_1":"0","grade_1_percent":"0","grade_2":"1","grade_2_percent":"1","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"4","inconnu_percent":"0","total":"5","total_percent":"0"},
+{"id":"22","table_id":"1","etat":"THYROIDE","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"0","total":"1","total_percent":"0"},
+{"id":"23","table_id":"1","etat":"GGL LYMPHATIQUE","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"0","total":"2","total_percent":"0"},
+{"id":"24","table_id":"1","etat":"SITE INCONNU","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"0","total":"1","total_percent":"0"},
+{"id":"25","table_id":"1","etat":"Autres","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"4","inconnu_percent":"0","total":"4","total_percent":"0"},
+{"id":"29","table_id":"1","etat":"qqqq","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"0","inconnu_percent":"0","total":"0","total_percent":"0"},
+{"id":"33","table_id":"4","etat":"PHARYNX","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"1","total":"1","total_percent":"1"},
+{"id":"34","table_id":"25","etat":"PHARYNX","grade_1":"1","grade_1_percent":"1","grade_2":"1","grade_2_percent":"1","grade_3":"1","grade_3_percent":"1","grade_4":"1","grade_4_percent":"1","inconnu":"1","inconnu_percent":"1","total":"1","total_percent":"1"},
+{"id":"35","table_id":"26","etat":"PHARYNX","grade_1":"1","grade_1_percent":"1","grade_2":"1","grade_2_percent":"1","grade_3":"1","grade_3_percent":"1","grade_4":"1","grade_4_percent":"1","inconnu":"1","inconnu_percent":"1","total":"5","total_percent":"5"},
+{"id":"37","table_id":"27","etat":"colon ","grade_1":"2","grade_1_percent":"2","grade_2":"1","grade_2_percent":"1","grade_3":"4","grade_3_percent":"4","grade_4":"2","grade_4_percent":"2","inconnu":"2","inconnu_percent":"2","total":"11","total_percent":"11"},
+{"id":"38","table_id":"27","etat":"reins ","grade_1":"1","grade_1_percent":"1","grade_2":"1","grade_2_percent":"1","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"0","inconnu_percent":"0","total":"2","total_percent":"2"},
+{"id":"43","table_id":"2","etat":"PHARYNX","grade_1":"2","grade_1_percent":"2","grade_2":"1","grade_2_percent":"1","grade_3":"1","grade_3_percent":"1","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"1","total":"4","total_percent":"4"},
+{"id":"44","table_id":"2","etat":"reins","grade_1":"2","grade_1_percent":"2","grade_2":"1","grade_2_percent":"1","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"0","inconnu_percent":"0","total":"3","total_percent":"3"},
+{"id":"45","table_id":"2","etat":"estamac","grade_1":"3","grade_1_percent":"3","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"1","total":"4","total_percent":"4"},
+{"id":"46","table_id":"28","etat":"OESOPHAGE","grade_1":"3","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"0","inconnu_percent":"0","total":"0","total_percent":"0"},
+{"id":"47","table_id":"4","etat":"OESOPHAGE","grade_1":"0","grade_1_percent":"0","grade_2":"1","grade_2_percent":"50","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"1","total":"2","total_percent":"2"},
+{"id":"48","table_id":"4","etat":"estamac","grade_1":"1","grade_1_percent":"25","grade_2":"0","grade_2_percent":"0","grade_3":"1","grade_3_percent":"100","grade_4":"0","grade_4_percent":"0","inconnu":"15","inconnu_percent":"16","total":"17","total_percent":"17"},
+{"id":"49","table_id":"4","etat":"colon ","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"2","total":"2","total_percent":"2"},
+{"id":"50","table_id":"4","etat":"rectum","grade_1":"1","grade_1_percent":"25","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"2","total":"3","total_percent":"3"},
+{"id":"51","table_id":"4","etat":"anus ","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"1","inconnu_percent":"1","total":"1","total_percent":"1"},
+{"id":"52","table_id":"4","etat":"foie ","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"4","inconnu_percent":"4","total":"4","total_percent":"4"},
+{"id":"53","table_id":"4","etat":"vésicule biliaire ","grade_1":"0","grade_1_percent":"0","grade_2":"0","grade_2_percent":"0","grade_3":"0","grade_3_percent":"0","grade_4":"0","grade_4_percent":"0","inconnu":"2","inconnu_percent":"2","total":"2","total_percent":"2"}
+]
+}
+,{"type":"table","name":"table_02","database":"statistiques","data":
+[
+{"id":"1","table_id":"2","etat":"pharynx ","femme":"0","femme_percent":"0","homme":"1","homme_percent":"2","total":"1","total_percent":"1"},
+{"id":"2","table_id":"2","etat":"oesophage ","femme":"1","femme_percent":"3","homme":"1","homme_percent":"1","total":"2","total_percent":"2"},
+{"id":"3","table_id":"2","etat":"estomac ","femme":"4","femme_percent":"11","homme":"14","homme_percent":"20","total":"17","total_percent":"17"},
+{"id":"4","table_id":"2","etat":"colon","femme":"1","femme_percent":"3","homme":"1","homme_percent":"2","total":"2","total_percent":"2"},
+{"id":"5","table_id":"2","etat":"rectum","femme":"0","femme_percent":"0","homme":"3","homme_percent":"5","total":"3","total_percent":"3"},
+{"id":"6","table_id":"2","etat":"anus ","femme":"0","femme_percent":"0","homme":"1","homme_percent":"2","total":"1","total_percent":"1"},
+{"id":"7","table_id":"2","etat":"foie ","femme":"2","femme_percent":"5","homme":"2","homme_percent":"3","total":"4","total_percent":"4"},
+{"id":"8","table_id":"2","etat":"vésicule biliaire ","femme":"2","femme_percent":"5","homme":"0","homme_percent":"0","total":"0","total_percent":"2"},
+{"id":"9","table_id":"2","etat":"pancréas ","femme":"1","femme_percent":"3","homme":"5","homme_percent":"8","total":"6","total_percent":"6"},
+{"id":"10","table_id":"2","etat":"app. degestif","femme":"2","femme_percent":"5","homme":"0","homme_percent":"0","total":"2","total_percent":"2"},
+{"id":"11","table_id":"2","etat":"glotte ","femme":"0","femme_percent":"0","homme":"1","homme_percent":"2","total":"1","total_percent":"1"},
+{"id":"12","table_id":"2","etat":"bronches ","femme":"2","femme_percent":"5","homme":"6","homme_percent":"9","total":"8","total_percent":"8"},
+{"id":"13","table_id":"2","etat":"os membres ","femme":"0","femme_percent":"0","homme":"3","homme_percent":"5","total":"3","total_percent":"3"},
+{"id":"14","table_id":"2","etat":"sang","femme":"0","femme_percent":"0","homme":"9","homme_percent":"14","total":"9","total_percent":"9"},
+{"id":"15","table_id":"2","etat":"sein ","femme":"8","femme_percent":"22","homme":"4","homme_percent":"6","total":"12","total_percent":"12"},
+{"id":"16","table_id":"2","etat":"col.uterin ","femme":"8","femme_percent":"22","homme":"0","homme_percent":"0","total":"8","total_percent":"8"},
+{"id":"17","table_id":"2","etat":"uterus","femme":"1","femme_percent":"3","homme":"0","homme_percent":"0","total":"1","total_percent":"1"},
+{"id":"18","table_id":"2","etat":"ovaires","femme":"1","femme_percent":"3","homme":"0","homme_percent":"0","total":"1","total_percent":"1"},
+{"id":"19","table_id":"2","etat":"prostate ","femme":"0","femme_percent":"0","homme":"5","homme_percent":"7","total":"5","total_percent":"5"},
+{"id":"20","table_id":"2","etat":"vessie","femme":"0","femme_percent":"0","homme":"2","homme_percent":"3","total":"2","total_percent":"2"},
+{"id":"21","table_id":"2","etat":"UTERUS","femme":"1","femme_percent":"3","homme":"0","homme_percent":"0","total":"1","total_percent":"1"},
+{"id":"22","table_id":"2","etat":"VES. BILIAIRE","femme":"2","femme_percent":"5","homme":"0","homme_percent":"0","total":"2","total_percent":"2"},
+{"id":"23","table_id":"2","etat":"VESSIE","femme":"0","femme_percent":"0","homme":"2","homme_percent":"3","total":"2","total_percent":"2"},
+{"id":"24","table_id":"2","etat":"SITE INCONNU","femme":"1","femme_percent":"3","homme":"0","homme_percent":"0","total":"1","total_percent":"1"},
+{"id":"25","table_id":"2","etat":"Autres","femme":"2","femme_percent":"5","homme":"2","homme_percent":"3","total":"4","total_percent":"4"},
+{"id":"27","table_id":"0","etat":"PHARYNX","femme":"0","femme_percent":"0","homme":"1","homme_percent":"2","total":"1","total_percent":"1"},
+{"id":"28","table_id":"0","etat":"PHARYNX","femme":"0","femme_percent":"0","homme":"1","homme_percent":"2","total":"1","total_percent":"1"},
+{"id":"29","table_id":"0","etat":"PHARYNX","femme":"0","femme_percent":"0","homme":"1","homme_percent":"2","total":"1","total_percent":"1"},
+{"id":"30","table_id":"0","etat":"PHARYNX","femme":"0","femme_percent":"0","homme":"1","homme_percent":"2","total":"1","total_percent":"1"},
+{"id":"31","table_id":"0","etat":"PHARYNX","femme":"2","femme_percent":"2","homme":"3","homme_percent":"3","total":"5","total_percent":"5"},
+{"id":"32","table_id":"0","etat":"PHARYNX","femme":"1","femme_percent":"1","homme":"1","homme_percent":"1","total":"2","total_percent":"2"},
+{"id":"33","table_id":"31","etat":"colon ","femme":"2","femme_percent":"2","homme":"7","homme_percent":"7","total":"9","total_percent":"9"},
+{"id":"34","table_id":"31","etat":"OESOPHAGE","femme":"5","femme_percent":"5","homme":"0","homme_percent":"0","total":"5","total_percent":"5"},
+{"id":"35","table_id":"31","etat":"reins ","femme":"8","femme_percent":"8","homme":"2","homme_percent":"2","total":"10","total_percent":"10"},
+{"id":"36","table_id":"2","etat":"cerveau ","femme":"0","femme_percent":"0","homme":"5","homme_percent":"8","total":"5","total_percent":"5"},
+{"id":"37","table_id":"2","etat":"thyroide","femme":"1","femme_percent":"3","homme":"0","homme_percent":"1","total":"1","total_percent":"1"},
+{"id":"38","table_id":"2","etat":"GG lymphatique","femme":"0","femme_percent":"0","homme":"2","homme_percent":"3","total":"2","total_percent":"2"},
+{"id":"39","table_id":"2","etat":"site inconnu ","femme":"1","femme_percent":"3","homme":"0","homme_percent":"0","total":"1","total_percent":"1"},
+{"id":"40","table_id":"2","etat":"autres ","femme":"2","femme_percent":"5","homme":"2","homme_percent":"3","total":"4","total_percent":"4"}
+]
+}
+,{"type":"table","name":"table_03","database":"statistiques","data":
+[
+{"id":"1","table_id":"3","group_age":"0-4","femme":"43271","homme":"41212"},
+{"id":"2","table_id":"3","group_age":"5-9","femme":"36609","homme":"34953"},
+{"id":"3","table_id":"3","group_age":"10-14","femme":"42371","homme":"40149"},
+{"id":"4","table_id":"3","group_age":"15-19","femme":"49537","homme":"48152"},
+{"id":"5","table_id":"3","group_age":"20-24","femme":"50285","homme":"48783"},
+{"id":"6","table_id":"3","group_age":"25-29","femme":"43110","homme":"41638"},
+{"id":"7","table_id":"3","group_age":"30-34","femme":"32818","homme":"32159"},
+{"id":"8","table_id":"3","group_age":"35-39","femme":"26928","homme":"27563"},
+{"id":"9","table_id":"3","group_age":"40-44","femme":"23016","homme":"23241"},
+{"id":"10","table_id":"3","group_age":"45-49","femme":"17043","homme":"17693"},
+{"id":"11","table_id":"3","group_age":"50-54","femme":"15582","homme":"15132"},
+{"id":"12","table_id":"3","group_age":"55-59","femme":"12440","homme":"11425"},
+{"id":"13","table_id":"3","group_age":"60-64","femme":"8528","homme":"7911"},
+{"id":"14","table_id":"3","group_age":"65-69","femme":"7654","homme":"6991"},
+{"id":"15","table_id":"3","group_age":"70-74","femme":"5966","homme":"5781"},
+{"id":"16","table_id":"3","group_age":"75-99","femme":"7967","homme":"7564"},
+{"id":"19","table_id":"0","group_age":"0 - 0","femme":"2147483647","homme":"2147483647"},
+{"id":"20","table_id":"0","group_age":"0 - 0","femme":"0","homme":"0"},
+{"id":"21","table_id":"0","group_age":"02-03","femme":"68782","homme":"21546897"},
+{"id":"22","table_id":"0","group_age":"0 - 0","femme":"0","homme":"0"},
+{"id":"23","table_id":"0","group_age":"","femme":"0","homme":"0"},
+{"id":"24","table_id":"0","group_age":"05-10","femme":"100","homme":"150"},
+{"id":"25","table_id":"0","group_age":"74","femme":"4","homme":"4"},
+{"id":"26","table_id":"0","group_age":"05-10","femme":"1","homme":"2"}
+]
+}
+,{"type":"table","name":"table_04","database":"statistiques","data":
+[
+{"id":"1","table_id":"4","type":"ANUS","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"2","table_id":"4","type":"APP. DIGESTIF","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"1","80-89":"0","90-99":"0","total":"2","total_percent":"1"},
+{"id":"3","table_id":"4","type":"BRONCHES","0-9":"1","10-19":"1","20-29":"1","30-39":"0","40-49":"1","50-59":"1","60-69":"1","70-79":"1","80-89":"1","90-99":"0","total":"8","total_percent":"8"},
+{"id":"4","table_id":"4","type":"CERVEAU","0-9":"0","10-19":"1","20-29":"1","30-39":"0","40-49":"0","50-59":"3","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"5","total_percent":"5"},
+{"id":"5","table_id":"4","type":"COL UTERIN","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"3","60-69":"1","70-79":"2","80-89":"1","90-99":"0","total":"8","total_percent":"8"},
+{"id":"6","table_id":"4","type":"COLON","0-9":"0","10-19":"0","20-29":"0","30-39":"1","40-49":"0","50-59":"0","60-69":"1","70-79":"0","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"7","table_id":"4","type":"ESTOMAC","0-9":"0","10-19":"0","20-29":"0","30-39":"1","40-49":"1","50-59":"5","60-69":"4","70-79":"4","80-89":"1","90-99":"1","total":"17","total_percent":"17"},
+{"id":"8","table_id":"4","type":"FOIE","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"2","70-79":"1","80-89":"0","90-99":"0","total":"4","total_percent":"4"},
+{"id":"9","table_id":"4","type":"GGL LYMPHATIQUE","0-9":"1","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"10","table_id":"4","type":"GLOTTE","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"11","table_id":"4","type":"OESOPHAGE","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"1","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"12","table_id":"4","type":"OS membres","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"0","80-89":"1","90-99":"1","total":"3","total_percent":"3"},
+{"id":"13","table_id":"4","type":"OVAIRE","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"14","table_id":"4","type":"PANCREAS","0-9":"0","10-19":"0","20-29":"1","30-39":"0","40-49":"0","50-59":"1","60-69":"1","70-79":"2","80-89":"1","90-99":"0","total":"6","total_percent":"6"},
+{"id":"15","table_id":"4","type":"PHARYNX","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"0","70-79":"1","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"16","table_id":"4","type":"PROSTATE","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"1","70-79":"0","80-89":"2","90-99":"1","total":"5","total_percent":"5"},
+{"id":"17","table_id":"4","type":"RECTUM","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"0","70-79":"2","80-89":"0","90-99":"0","total":"3","total_percent":"3"},
+{"id":"18","table_id":"4","type":"SANG","0-9":"2","10-19":"2","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"2","70-79":"3","80-89":"0","90-99":"0","total":"9","total_percent":"9"},
+{"id":"19","table_id":"4","type":"SEIN","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"6","50-59":"3","60-69":"2","70-79":"0","80-89":"1","90-99":"0","total":"12","total_percent":"12"},
+{"id":"20","table_id":"4","type":"THYROIDE","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"21","table_id":"4","type":"UTERUS","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"22","table_id":"4","type":"VES. BILIAIRE","0-9":"0","10-19":"0","20-29":"0","30-39":"1","40-49":"0","50-59":"0","60-69":"0","70-79":"0","80-89":"1","90-99":"0","total":"2","total_percent":"2"},
+{"id":"23","table_id":"4","type":"VESSIE","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"1","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"24","table_id":"4","type":"SITE INCONNU","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"0","70-79":"0","80-89":"1","90-99":"0","total":"1","total_percent":"1"},
+{"id":"25","table_id":"4","type":"Autres","0-9":"0","10-19":"0","20-29":"1","30-39":"0","40-49":"1","50-59":"0","60-69":"1","70-79":"1","80-89":"0","90-99":"0","total":"4","total_percent":"4"},
+{"id":"27","table_id":"0","type":"ANUS","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"28","table_id":"0","type":"ANUS","0-9":"0","10-19":"1","20-29":"0","30-39":"1","40-49":"0","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"29","table_id":"5","type":"ANUS","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"0","total_percent":"1"},
+{"id":"30","table_id":"5","type":"APP degestif","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"1","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"31","table_id":"5","type":"bronches ","0-9":"1","10-19":"1","20-29":"1","30-39":"0","40-49":"1","50-59":"1","60-69":"1","70-79":"1","80-89":"1","90-99":"0","total":"8","total_percent":"8"},
+{"id":"32","table_id":"5","type":"cerveau ","0-9":"0","10-19":"1","20-29":"1","30-39":"0","40-49":"0","50-59":"3","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"5","total_percent":"5"},
+{"id":"33","table_id":"5","type":"col utérin ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"3","60-69":"1","70-79":"2","80-89":"1","90-99":"0","total":"8","total_percent":"8"},
+{"id":"34","table_id":"5","type":"colon ","0-9":"0","10-19":"0","20-29":"0","30-39":"1","40-49":"0","50-59":"0","60-69":"1","70-79":"0","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"35","table_id":"5","type":"Estomac ","0-9":"0","10-19":"0","20-29":"0","30-39":"1","40-49":"1","50-59":"5","60-69":"4","70-79":"4","80-89":"1","90-99":"1","total":"17","total_percent":"17"},
+{"id":"36","table_id":"5","type":"Fois ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"2","70-79":"1","80-89":"0","90-99":"0","total":"4","total_percent":"4"},
+{"id":"37","table_id":"5","type":"GGL Lymphatique ","0-9":"1","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"38","table_id":"5","type":"Glotte ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"39","table_id":"5","type":"Œsophage ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"1","80-89":"0","90-99":"0","total":"2","total_percent":"2"},
+{"id":"40","table_id":"5","type":"Os membres ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"1","70-79":"0","80-89":"1","90-99":"1","total":"3","total_percent":"3"},
+{"id":"41","table_id":"5","type":"Ovaires ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"42","table_id":"5","type":"Pancréat","0-9":"0","10-19":"0","20-29":"1","30-39":"0","40-49":"0","50-59":"1","60-69":"1","70-79":"2","80-89":"1","90-99":"0","total":"6","total_percent":"6"},
+{"id":"43","table_id":"5","type":"pharynxe","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"0","70-79":"1","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"44","table_id":"5","type":"prostate ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"1","70-79":"0","80-89":"2","90-99":"1","total":"5","total_percent":"5"},
+{"id":"45","table_id":"5","type":"Rectum ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"0","50-59":"1","60-69":"0","70-79":"2","80-89":"0","90-99":"0","total":"3","total_percent":"3"},
+{"id":"46","table_id":"5","type":"Sang","0-9":"2","10-19":"2","20-29":"0","30-39":"0","40-49":"0","50-59":"0","60-69":"2","70-79":"3","80-89":"0","90-99":"0","total":"9","total_percent":"9"},
+{"id":"47","table_id":"5","type":"Sein ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"6","50-59":"3","60-69":"2","70-79":"0","80-89":"1","90-99":"0","total":"12","total_percent":"12"},
+{"id":"48","table_id":"5","type":"Thyroid","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"1"},
+{"id":"49","table_id":"5","type":"Utérus ","0-9":"0","10-19":"0","20-29":"0","30-39":"0","40-49":"1","50-59":"0","60-69":"0","70-79":"0","80-89":"0","90-99":"0","total":"1","total_percent":"0"}
+]
+}
+,{"type":"table","name":"table_05","database":"statistiques","data":
+[
+{"id":"1","table_id":"0","nom_et_eprenom":"sd","date":"14","numero_telephone":"1","numero_de_la_famille":"1","type_de_cancer":"1","etats_de_trt":"1","date_dentre":"1","les_rendivaux":"1","les_medicaments":"1","les_radios":"1","les_analyse":"1","les_seances":"1","les_maladies_chroniques":"1","metastasique":"1"},
+{"id":"2","table_id":"30","nom_et_eprenom":"ze","date":"14","numero_telephone":"1","numero_de_la_famille":"1","type_de_cancer":"1","etats_de_trt":"1","date_dentre":"1","les_rendivaux":"1","les_medicaments":"1","les_radios":"1","les_analyse":"1","les_seances":"1","les_maladies_chroniques":"1","metastasique":"1"}
+]
+}
+,{"type":"table","name":"table_06","database":"statistiques","data":
+[
+
+]
+}
+{"type":"database","name":"students_db"},
+,{"type":"table","name":"students","database":"students_db","data":
+[
+
+]
+}
+]
