@@ -1,39 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epitracker Database</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+        .box { background: white; padding: 20px; border-radius: 10px; shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #27ae60; border-bottom: 2px solid #27ae60; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background: #27ae60; color: white; padding: 10px; text-align: left; font-size: 12px; }
+        td { border-bottom: 1px solid #ddd; padding: 10px; font-size: 12px; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
 <body>
-    <h1>Epitracker Test</h1>
-    <div id="out">Loading...</div>
+
+    <div class="box">
+        <h1>Epitracker Database</h1>
+        <div id="table-out">Loading data...</div>
+    </div>
 
     <script>
-        async function run() {
+        // Make sure your file on GitHub is named EXACTLY Db15.json
+        const file = 'Db15.json';
+
+        async function start() {
             try {
-                const res = await fetch('Db15.json');
-                const data = await res.json();
-                document.getElementById('out').innerHTML = JSON.stringify(data).substring(0, 500) + "...";
-            } catch (e) {
-                document.getElementById('out').innerHTML = "Error: " + e;
+                const r = await fetch(file);
+                const raw = await r.json();
+                
+                // This part handles the XAMPP/phpMyAdmin folder structure
+                let d = Array.isArray(raw) ? raw : (raw[2] && raw[2].data ? raw[2].data : Object.values(raw)[0]);
+
+                let html = '<table><thead><tr>';
+                Object.keys(d[0]).forEach(k => html += `<th>${k.toUpperCase()}</th>`);
+                html += '</tr></thead><tbody>';
+
+                d.forEach(row => {
+                    html += '<tr>';
+                    Object.values(row).forEach(v => html += `<td>${v || '-'}</td>`);
+                    html += '</tr>';
+                });
+                html += '</tbody></table>';
+                document.getElementById('table-out').innerHTML = html;
+
+            } catch (err) {
+                document.getElementById('table-out').innerHTML = `<p class="error">Data Error: Please re-export your JSON file from XAMPP. (Detail: ${err.message})</p>`;
             }
         }
-        run();
+        start();
     </script>
 </body>
 </html>
-        const dataFile = 'Db15.json'; 
-
-        async function loadData() {
-            const displayArea = document.getElementById('display-area');
-            try {
-                const response = await fetch(dataFile);
-                if (!response.ok) throw new Error('File not found');
-                
-                const rawData = await response.json();
-                
-                // Logic to find the data inside phpMyAdmin JSON structure
-                let data = Array.isArray(rawData) ? rawData : (rawData[2] && rawData[2].data ? rawData[2].data : Object.values(rawData)[0]);
-
-                if (!data || data.length === 0) {
-                    displayArea.innerHTML = "<div class='error-card'>The file was found but it contains no data rows.</div>";
-                    return;
                 }
 
                 let html = `
