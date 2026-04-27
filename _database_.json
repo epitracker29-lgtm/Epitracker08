@@ -1,39 +1,90 @@
-[
-{
-    "type": "header",
-    "version": "5.2.1",
-    "comment": "Export to JSON plugin for PHPMyAdmin"
-},
-{
-    "type": "database",
-    "name": "phpmyadmin"
-},
-{
-    "type": "table",
-    "name": "pma__bookmark",
-    "database": "phpmyadmin",
-    "data": 
-[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epitracker Database</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-color: #f4f4f4; }
+        .container { background: white; padding: 20px; border-radius: 8px; max-width: 900px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2e7d32; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; }
+        .error-msg { color: #d32f2f; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background-color: #2e7d32; color: white; padding: 10px; text-align: left; }
+        td { border: 1px solid #ddd; padding: 8px; font-size: 14px; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .status { margin-bottom: 10px; font-weight: bold; color: #555; }
+    </style>
+</head>
+<body>
 
-]
+<div class="container">
+    <h1>Epitracker Database</h1>
+    <div id="status" class="status">System: Initializing...</div>
+    <div id="displayArea">Loading data registry...</div>
+</div>
 
-}
-,{
-    "type": "table",
-    "name": "pma__central_columns",
-    "database": "phpmyadmin",
-    "data": 
-[
+<script>
+    const displayArea = document.getElementById('displayArea');
+    const statusText = document.getElementById('status');
+    const dataFile = '_database_.json'; // Matches your GitHub file name exactly
 
-]
+    async function loadData() {
+        try {
+            const response = await fetch(dataFile);
+            
+            if (!response.ok) {
+                throw new Error(`File not found (HTTP ${response.status})`);
+            }
 
-}
-,{
-    "type": "table",
-    "name": "pma__column_info",
-    "database": "phpmyadmin",
-    "data": 
-[
+            const data = await response.json();
+            statusText.innerText = "System: Live";
+            statusText.style.color = "green";
+
+            if (data.length === 0) {
+                displayArea.innerHTML = "<p>The database is currently empty.</p>";
+                return;
+            }
+
+            // Building the table
+            let html = `
+                <h3>Data Registry</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            ${Object.keys(data[0]).map(key => `<th>${key.replace(/_/g, ' ')}</th>`).join('')}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${data.map(row => `
+                            <tr>
+                                ${Object.values(row).map(val => `<td>${val !== null ? val : '-'}</td>`).join('')}
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+
+            displayArea.innerHTML = html;
+
+        } catch (error) {
+            statusText.innerText = "System: Offline";
+            statusText.style.color = "red";
+            displayArea.innerHTML = `
+                <div class="error-msg">
+                    <p>Data Error: Please check your JSON file. </p>
+                    <p><small>Detail: ${error.message}</small></p>
+                </div>
+                <p>Ensure <b>${dataFile}</b> is uploaded to the same folder as this index.html.</p>
+            `;
+        }
+    }
+
+    loadData();
+</script>
+
+</body>
+</html>
 
 ]
 
